@@ -1,0 +1,230 @@
+*, *::after , *::before{
+    box-sizing: border-box;
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Ruda');
+
+body {
+    margin: 0px;
+    /* border : 0px;*/
+    background-color: #f9fbfd;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Ruda', sans-serif;
+}
+
+.container .ql-editor {
+    width: 8.15in;
+    min-height: 11in;
+    padding : 1in;
+    margin : 1rem;
+    background-color: white;
+    box-shadow : 0 0 5px 0 rgba(0, 0 ,0 , 0.5)
+}
+
+.container .ql-container.ql-snow {
+    border : none;
+    display : flex;
+    justify-content : center;
+}
+
+.container .ql-toolbar.ql-snow {
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    margin-bottom: 15px;
+    background-color: #edf2fa;
+    border: none;
+    box-shadow: 0 0 5px 0 rgba(0, 0,0, 0.5);
+    border-radius : 40px;
+    margin-left : 10px;
+    margin-right : 10px;
+}
+
+@page {
+    margin : 1in;
+}
+
+@media print {
+    body {
+        background : none;
+       
+    }
+
+    .container .ql-editor {
+        width : 6.5in;
+        height : 9in;
+        margin : 0px;
+        padding : 0;
+        box-shadow : none;
+        align-self : flex-start;
+    }
+    .container .ql-toolbar.ql-snow {
+        display : none;
+    }
+
+
+}
+
+/*header*/
+
+.header-block {
+    display: flex;
+}
+
+.logo {
+    width: 30px;
+    height: 40px;
+    margin: 10px;
+}
+
+.tool-icons {
+    display: flex;
+   margin-top : 10px;
+}
+
+#heading {
+    font-size : 18px;
+    padding-left : 4px;
+}
+
+#heading:hover {
+    border : 1px solid lightgray;
+    border-radius : 5px;
+}
+
+#tools-icons {
+    position: relative;
+    bottom: 2px;
+    left: 5px;
+}
+
+
+#initial-icon {
+        padding : 5px;
+}
+
+#initial-icon:hover {
+    background-color : lightgray;
+    cursor : pointer;
+    border-radius : 50%;
+}
+
+.tool-options {
+    display: flex;
+    margin: 0px;
+    padding-top: 5px;
+}
+
+#file-icn {
+    font-size : 15px;
+    padding-left : 5px;
+    padding-right : 5px;
+}
+
+#file-icn:hover {
+        background-color: lightgray;
+        cursor: pointer;
+        border-radius: 20%;
+}
+
+.profile-block {
+    display: flex;
+    justify-content : center;
+    position: relative;
+    left: 800px;
+}
+
+#profile-icons {
+    position: relative;
+    top: 19px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#prf-icon {
+    padding: 8px;
+    font-size : 18px;
+}
+
+#prf-icon:hover {
+    background-color: lightgray;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+p {
+    margin: 0px;
+    padding: 0px;
+}
+
+#share-btn {
+    background-color: #c2e7ff;
+    padding: 0px 15px 0px 15px;
+    margin: 5px 5px 5px 15px;
+    border-radius: 30px;
+}
+
+#share-btn:hover {
+    box-shadow :  0 0 5px 0 rgba(0, 0,0, 0.5);
+}
+
+#prf-btn {
+    background-color: peachpuff;
+    padding: 0px 15px 0px 15px;
+    border-radius: 30px;
+    margin: 5px 5px 5px 15px;
+}
+
+    #prf-btn:hover {
+        box-shadow: 0 0 5px 0 rgba(0, 0,0, 0.5);
+    }
+
+
+.Sidebar {
+    width: 350px;
+    height: 700px;
+    position : relative;
+    bottom : 1090px;
+    padding-top : 20px;
+    
+}
+
+.sidebar-list {
+    height : auto;
+    padding : 0px;
+    width : 100%;
+   
+}
+
+.sidebar-list .row {
+    width : 300px;
+    height : 50px;
+    list-style-type : none;
+    margin : 0px;
+    display : flex;
+    flex-direction : row;
+    justify-content : center;
+    align-items : center;
+    
+}
+
+.sidebar-list .row:hover {
+    cursor : pointer;
+    background-color : lightgray;
+    border-radius : 15px;
+}
+
+.row #icon-side {
+   flex: 30%;
+   display: grid;
+   place-items: center;
+}
+
+.row #title-side {
+    flex : 70%;
+}
